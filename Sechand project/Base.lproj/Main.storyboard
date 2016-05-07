@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="IAp-ux-Udn">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -40,6 +40,9 @@
                                         <state key="normal" title="登入">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="IAp-ux-Udn" kind="show" id="OPE-TK-cTT"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -95,6 +98,104 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="335" y="366"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="o2l-oB-zmu">
+            <objects>
+                <navigationController id="IAp-ux-Udn" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jt4-wk-slR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.85882352941176465" green="0.22745098039215686" blue="0.11372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="C8u-18-kz4" kind="relationship" relationship="rootViewController" id="QaO-pd-V9x"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Voc-2d-fM6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-417" y="1170"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jwL-xm-FUm">
+            <objects>
+                <viewController id="C8u-18-kz4" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="e4d-65-ZPY"/>
+                        <viewControllerLayoutGuide type="bottom" id="r4l-IZ-0Lu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yZg-4h-o4Z">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nfc-bi-jKw">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="XQm-Jv-bpg">
+                            <view key="customView" contentMode="scaleToFill" id="ymq-zz-0Ox">
+                                <rect key="frame" x="20" y="0.0" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hand" translatesAutoresizingMaskIntoConstraints="NO" id="p5d-ev-kn1">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="p5d-ev-kn1" firstAttribute="top" secondItem="ymq-zz-0Ox" secondAttribute="top" id="4Nf-3s-kI1"/>
+                                    <constraint firstAttribute="bottom" secondItem="p5d-ev-kn1" secondAttribute="bottom" id="EQv-je-kU5"/>
+                                    <constraint firstAttribute="trailing" secondItem="p5d-ev-kn1" secondAttribute="trailing" id="LdD-OG-apO"/>
+                                    <constraint firstItem="p5d-ev-kn1" firstAttribute="leading" secondItem="ymq-zz-0Ox" secondAttribute="leading" id="WMc-ez-k5x"/>
+                                </constraints>
+                            </view>
+                        </barButtonItem>
+                        <view key="titleView" contentMode="scaleToFill" id="8e7-oX-nkg">
+                            <rect key="frame" x="180" y="0.0" width="240" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="ewC-XB-aVZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="240" height="44"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </searchBar>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="ewC-XB-aVZ" firstAttribute="top" secondItem="8e7-oX-nkg" secondAttribute="top" id="P3G-Ww-wvu"/>
+                                <constraint firstAttribute="trailing" secondItem="ewC-XB-aVZ" secondAttribute="trailing" id="UxO-q4-0wn"/>
+                                <constraint firstAttribute="bottom" secondItem="ewC-XB-aVZ" secondAttribute="bottom" id="cj4-YM-1Dq"/>
+                                <constraint firstItem="ewC-XB-aVZ" firstAttribute="leading" secondItem="8e7-oX-nkg" secondAttribute="leading" id="lKO-8m-QWG"/>
+                            </constraints>
+                        </view>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="I2y-BS-ByT">
+                            <view key="customView" contentMode="scaleToFill" id="HtM-KO-xbb">
+                                <rect key="frame" x="465" y="5" width="115" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l99-dt-EZh">
+                                        <rect key="frame" x="98" y="0.0" width="17" height="33"/>
+                                        <state key="normal" image="triangle"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="UserName" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MMh-zP-yte">
+                                        <rect key="frame" x="0.0" y="0.0" width="98" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="MMh-zP-yte" firstAttribute="top" secondItem="HtM-KO-xbb" secondAttribute="top" id="2Xs-po-FCr"/>
+                                    <constraint firstItem="MMh-zP-yte" firstAttribute="leading" secondItem="HtM-KO-xbb" secondAttribute="leading" id="9Cg-5X-RAn"/>
+                                    <constraint firstAttribute="bottom" secondItem="l99-dt-EZh" secondAttribute="bottom" id="Mnk-XS-qSt"/>
+                                    <constraint firstAttribute="bottom" secondItem="MMh-zP-yte" secondAttribute="bottom" id="Rhu-k8-LLx"/>
+                                    <constraint firstItem="l99-dt-EZh" firstAttribute="top" secondItem="HtM-KO-xbb" secondAttribute="top" id="fHg-0f-QSL"/>
+                                    <constraint firstItem="l99-dt-EZh" firstAttribute="leading" secondItem="MMh-zP-yte" secondAttribute="trailing" id="hRS-t8-3s5"/>
+                                    <constraint firstAttribute="trailing" secondItem="l99-dt-EZh" secondAttribute="trailing" id="xg1-FW-07D"/>
+                                </constraints>
+                            </view>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E2O-U1-GWW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="335" y="1170"/>
         </scene>
         <!--Login Page View Controller-->
         <scene sceneID="bT1-hw-UNE">
@@ -199,6 +300,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="hand" width="35" height="26"/>
         <image name="logo" width="219" height="46"/>
+        <image name="triangle" width="9" height="9"/>
     </resources>
 </document>
