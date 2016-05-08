@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		20D9DD981CDCD72900104D98 /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D9DD971CDCD72900104D98 /* LoginPageViewController.swift */; };
+		20D9DD981CDCD72900104D98 /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D9DD971CDCD72900104D98 /* RegisterPageViewController.swift */; };
 		DBAED0291CD067DA00E84AE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAED0281CD067DA00E84AE3 /* AppDelegate.swift */; };
 		DBAED02E1CD067DA00E84AE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBAED02C1CD067DA00E84AE3 /* Main.storyboard */; };
 		DBAED0301CD067DA00E84AE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBAED02F1CD067DA00E84AE3 /* Assets.xcassets */; };
@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		20D9DD971CDCD72900104D98 /* LoginPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
+		20D9DD971CDCD72900104D98 /* RegisterPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
 		DBAED0251CD067DA00E84AE3 /* Sechand project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sechand project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBAED0281CD067DA00E84AE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBAED02D1CD067DA00E84AE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,7 +59,7 @@
 				DBAED02F1CD067DA00E84AE3 /* Assets.xcassets */,
 				DBAED0311CD067DA00E84AE3 /* LaunchScreen.storyboard */,
 				DBAED0341CD067DA00E84AE3 /* Info.plist */,
-				20D9DD971CDCD72900104D98 /* LoginPageViewController.swift */,
+				20D9DD971CDCD72900104D98 /* RegisterPageViewController.swift */,
 			);
 			path = "Sechand project";
 			sourceTree = "<group>";
@@ -136,7 +136,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBAED0291CD067DA00E84AE3 /* AppDelegate.swift in Sources */,
-				20D9DD981CDCD72900104D98 /* LoginPageViewController.swift in Sources */,
+				20D9DD981CDCD72900104D98 /* RegisterPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
